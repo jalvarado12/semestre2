@@ -1,17 +1,15 @@
 #include <iostream>
-#include "dynarray.hpp"
+#include "vec3d.hpp"
 
-int main() {
-  DynArray myarray(5);
 
-  for(int i = 0; i < myarray.size(); i++){
-    myarray.set(i, i+3);
-  }
-  
-  std::cout << myarray << "\n";
-
-  myarray.get(5);
-  
-  
-  return 0;
+int main(){
+	vector3d myc;
+	myc[0]=1;
+	myc[1]=2;
+	myc[2]=3;
+	std::cout<<myc<<"\n ";
+	
+	myc[0];
+	
+	return 0;
 }
